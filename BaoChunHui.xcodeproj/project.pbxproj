@@ -15,11 +15,6 @@
 		E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4233B7F1DDAA1990023D3DC /* BaoChunHui.xcdatamodeld */; };
 		E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4233B821DDAA1990023D3DC /* Assets.xcassets */; };
 		E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4233B841DDAA1990023D3DC /* LaunchScreen.storyboard */; };
-		E45E82D41DDAD2A200CC493B /* 报春晖 in Resources */ = {isa = PBXBuildFile; fileRef = E45E82CF1DDAD2A200CC493B /* 报春晖 */; };
-		E45E82D51DDAD2A200CC493B /* 家属 in Resources */ = {isa = PBXBuildFile; fileRef = E45E82D01DDAD2A200CC493B /* 家属 */; };
-		E45E82D61DDAD2A200CC493B /* 老人 in Resources */ = {isa = PBXBuildFile; fileRef = E45E82D11DDAD2A200CC493B /* 老人 */; };
-		E45E82D71DDAD2A200CC493B /* 站点 in Resources */ = {isa = PBXBuildFile; fileRef = E45E82D21DDAD2A200CC493B /* 站点 */; };
-		E45E82D81DDAD2A200CC493B /* 照护师 in Resources */ = {isa = PBXBuildFile; fileRef = E45E82D31DDAD2A200CC493B /* 照护师 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +32,6 @@
 		E4233B821DDAA1990023D3DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4233B851DDAA1990023D3DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4233B871DDAA1990023D3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E45E82CF1DDAD2A200CC493B /* 报春晖 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "报春晖"; sourceTree = "<group>"; };
-		E45E82D01DDAD2A200CC493B /* 家属 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "家属"; sourceTree = "<group>"; };
-		E45E82D11DDAD2A200CC493B /* 老人 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "老人"; sourceTree = "<group>"; };
-		E45E82D21DDAD2A200CC493B /* 站点 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "站点"; sourceTree = "<group>"; };
-		E45E82D31DDAD2A200CC493B /* 照护师 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "照护师"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +86,11 @@
 			children = (
 				E4233B761DDAA1990023D3DC /* AppDelegate.h */,
 				E4233B771DDAA1990023D3DC /* AppDelegate.m */,
-				E45E82CF1DDAD2A200CC493B /* 报春晖 */,
-				E45E82D01DDAD2A200CC493B /* 家属 */,
-				E45E82D11DDAD2A200CC493B /* 老人 */,
-				E45E82D21DDAD2A200CC493B /* 站点 */,
-				E45E82D31DDAD2A200CC493B /* 照护师 */,
+				E45E82D91DDAD61900CC493B /* 报春晖 */,
+				E45E82E41DDAD61900CC493B /* 家属 */,
+				E45E82EF1DDAD61900CC493B /* 老人 */,
+				E45E83051DDAD61900CC493B /* 站点 */,
+				E45E83101DDAD61900CC493B /* 照护师 */,
 				E4233B791DDAA1990023D3DC /* ViewController.h */,
 				E4233B7A1DDAA1990023D3DC /* ViewController.m */,
 				E4233B7C1DDAA1990023D3DC /* Main.storyboard */,
@@ -119,6 +109,529 @@
 				E4233B741DDAA1990023D3DC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E45E82D91DDAD61900CC493B /* 报春晖 */ = {
+			isa = PBXGroup;
+			children = (
+				E45E82DA1DDAD61900CC493B /* Category */,
+				E45E82DB1DDAD61900CC493B /* Define */,
+				E45E82DC1DDAD61900CC493B /* Model */,
+				E45E82DD1DDAD61900CC493B /* NerManager */,
+				E45E82DE1DDAD61900CC493B /* Resourse */,
+				E45E82DF1DDAD61900CC493B /* Tool */,
+				E45E82E01DDAD61900CC493B /* Vendor */,
+				E45E82E11DDAD61900CC493B /* View */,
+				E45E82E21DDAD61900CC493B /* ViewContorller */,
+				E45E82E31DDAD61900CC493B /* ViewModel */,
+			);
+			path = "报春晖";
+			sourceTree = "<group>";
+		};
+		E45E82DA1DDAD61900CC493B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E45E82DB1DDAD61900CC493B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E45E82DC1DDAD61900CC493B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E82DD1DDAD61900CC493B /* NerManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NerManager;
+			sourceTree = "<group>";
+		};
+		E45E82DE1DDAD61900CC493B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E45E82DF1DDAD61900CC493B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E45E82E01DDAD61900CC493B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E45E82E11DDAD61900CC493B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E82E21DDAD61900CC493B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		E45E82E31DDAD61900CC493B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45E82E41DDAD61900CC493B /* 家属 */ = {
+			isa = PBXGroup;
+			children = (
+				E45E82E51DDAD61900CC493B /* Category */,
+				E45E82E61DDAD61900CC493B /* Define */,
+				E45E82E71DDAD61900CC493B /* Model */,
+				E45E82E81DDAD61900CC493B /* NerManager */,
+				E45E82E91DDAD61900CC493B /* Resourse */,
+				E45E82EA1DDAD61900CC493B /* Tool */,
+				E45E82EB1DDAD61900CC493B /* Vendor */,
+				E45E82EC1DDAD61900CC493B /* View */,
+				E45E82ED1DDAD61900CC493B /* ViewContorller */,
+				E45E82EE1DDAD61900CC493B /* ViewModel */,
+			);
+			path = "家属";
+			sourceTree = "<group>";
+		};
+		E45E82E51DDAD61900CC493B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E45E82E61DDAD61900CC493B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E45E82E71DDAD61900CC493B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E82E81DDAD61900CC493B /* NerManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NerManager;
+			sourceTree = "<group>";
+		};
+		E45E82E91DDAD61900CC493B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E45E82EA1DDAD61900CC493B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E45E82EB1DDAD61900CC493B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E45E82EC1DDAD61900CC493B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E82ED1DDAD61900CC493B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		E45E82EE1DDAD61900CC493B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45E82EF1DDAD61900CC493B /* 老人 */ = {
+			isa = PBXGroup;
+			children = (
+				E45E82F01DDAD61900CC493B /* Category */,
+				E45E82F11DDAD61900CC493B /* Define */,
+				E45E82F21DDAD61900CC493B /* Model */,
+				E45E82F31DDAD61900CC493B /* NerManager */,
+				E45E82F41DDAD61900CC493B /* Resourse */,
+				E45E82F51DDAD61900CC493B /* Tool */,
+				E45E82F61DDAD61900CC493B /* Vendor */,
+				E45E82F71DDAD61900CC493B /* View */,
+				E45E82F81DDAD61900CC493B /* ViewContorller */,
+				E45E82F91DDAD61900CC493B /* ViewModel */,
+				E45E82FA1DDAD61900CC493B /* 家属 */,
+			);
+			path = "老人";
+			sourceTree = "<group>";
+		};
+		E45E82F01DDAD61900CC493B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E45E82F11DDAD61900CC493B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E45E82F21DDAD61900CC493B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E82F31DDAD61900CC493B /* NerManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NerManager;
+			sourceTree = "<group>";
+		};
+		E45E82F41DDAD61900CC493B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E45E82F51DDAD61900CC493B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E45E82F61DDAD61900CC493B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E45E82F71DDAD61900CC493B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E82F81DDAD61900CC493B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		E45E82F91DDAD61900CC493B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45E82FA1DDAD61900CC493B /* 家属 */ = {
+			isa = PBXGroup;
+			children = (
+				E45E82FB1DDAD61900CC493B /* Category */,
+				E45E82FC1DDAD61900CC493B /* Define */,
+				E45E82FD1DDAD61900CC493B /* Model */,
+				E45E82FE1DDAD61900CC493B /* NerManager */,
+				E45E82FF1DDAD61900CC493B /* Resourse */,
+				E45E83001DDAD61900CC493B /* Tool */,
+				E45E83011DDAD61900CC493B /* Vendor */,
+				E45E83021DDAD61900CC493B /* View */,
+				E45E83031DDAD61900CC493B /* ViewContorller */,
+				E45E83041DDAD61900CC493B /* ViewModel */,
+			);
+			path = "家属";
+			sourceTree = "<group>";
+		};
+		E45E82FB1DDAD61900CC493B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E45E82FC1DDAD61900CC493B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E45E82FD1DDAD61900CC493B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E82FE1DDAD61900CC493B /* NerManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NerManager;
+			sourceTree = "<group>";
+		};
+		E45E82FF1DDAD61900CC493B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E45E83001DDAD61900CC493B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E45E83011DDAD61900CC493B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E45E83021DDAD61900CC493B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E83031DDAD61900CC493B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		E45E83041DDAD61900CC493B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45E83051DDAD61900CC493B /* 站点 */ = {
+			isa = PBXGroup;
+			children = (
+				E45E83061DDAD61900CC493B /* Category */,
+				E45E83071DDAD61900CC493B /* Define */,
+				E45E83081DDAD61900CC493B /* Model */,
+				E45E83091DDAD61900CC493B /* NerManager */,
+				E45E830A1DDAD61900CC493B /* Resourse */,
+				E45E830B1DDAD61900CC493B /* Tool */,
+				E45E830C1DDAD61900CC493B /* Vendor */,
+				E45E830D1DDAD61900CC493B /* View */,
+				E45E830E1DDAD61900CC493B /* ViewContorller */,
+				E45E830F1DDAD61900CC493B /* ViewModel */,
+			);
+			path = "站点";
+			sourceTree = "<group>";
+		};
+		E45E83061DDAD61900CC493B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E45E83071DDAD61900CC493B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E45E83081DDAD61900CC493B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E83091DDAD61900CC493B /* NerManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NerManager;
+			sourceTree = "<group>";
+		};
+		E45E830A1DDAD61900CC493B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E45E830B1DDAD61900CC493B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E45E830C1DDAD61900CC493B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E45E830D1DDAD61900CC493B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E830E1DDAD61900CC493B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		E45E830F1DDAD61900CC493B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45E83101DDAD61900CC493B /* 照护师 */ = {
+			isa = PBXGroup;
+			children = (
+				E45E83111DDAD61900CC493B /* Category */,
+				E45E83121DDAD61900CC493B /* Define */,
+				E45E83131DDAD61900CC493B /* Model */,
+				E45E83141DDAD61900CC493B /* NerManager */,
+				E45E83151DDAD61900CC493B /* Resourse */,
+				E45E83161DDAD61900CC493B /* Tool */,
+				E45E83171DDAD61900CC493B /* Vendor */,
+				E45E83181DDAD61900CC493B /* View */,
+				E45E83191DDAD61900CC493B /* ViewContorller */,
+				E45E831A1DDAD61900CC493B /* ViewModel */,
+			);
+			path = "照护师";
+			sourceTree = "<group>";
+		};
+		E45E83111DDAD61900CC493B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E45E83121DDAD61900CC493B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E45E83131DDAD61900CC493B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E45E83141DDAD61900CC493B /* NerManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NerManager;
+			sourceTree = "<group>";
+		};
+		E45E83151DDAD61900CC493B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		E45E83161DDAD61900CC493B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E45E83171DDAD61900CC493B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E45E83181DDAD61900CC493B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E45E83191DDAD61900CC493B /* ViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewContorller;
+			sourceTree = "<group>";
+		};
+		E45E831A1DDAD61900CC493B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,14 +695,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45E82D51DDAD2A200CC493B /* 家属 in Resources */,
-				E45E82D61DDAD2A200CC493B /* 老人 in Resources */,
 				E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */,
 				E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */,
 				E4233B7E1DDAA1990023D3DC /* Main.storyboard in Resources */,
-				E45E82D71DDAD2A200CC493B /* 站点 in Resources */,
-				E45E82D81DDAD2A200CC493B /* 照护师 in Resources */,
-				E45E82D41DDAD2A200CC493B /* 报春晖 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
