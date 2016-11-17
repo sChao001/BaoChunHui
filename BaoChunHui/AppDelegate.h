@@ -15,6 +15,13 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+@property(nonatomic, strong) UIWindow * welcomeWindow;
+
+@property(nonatomic, strong) UIWindow * adWindow;
+
+
+
+
 - (void)saveContext;
 
 

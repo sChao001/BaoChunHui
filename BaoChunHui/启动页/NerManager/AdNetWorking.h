@@ -10,7 +10,7 @@
 
 @interface AdNetWorking : BaseNetworking
 
-+ (id)getAdImageURLCompletionHandler:(void (^)()
+//+ (id)getAdImageURLCompletionHandler:(void (^)()
 
 
 @end

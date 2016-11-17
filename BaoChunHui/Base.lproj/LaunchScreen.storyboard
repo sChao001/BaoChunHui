@@ -20,12 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0715" translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-oa-3xE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y0v-oa-3xE" secondAttribute="trailing" id="2hu-lT-Vvc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Y0v-oa-3xE" secondAttribute="bottom" id="GRd-DL-UU1"/>
+                            <constraint firstItem="Y0v-oa-3xE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Zqh-qe-XPD"/>
+                            <constraint firstItem="Y0v-oa-3xE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="aQg-Fh-B8x"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-60" y="168"/>
+            <point key="canvasLocation" x="-60" y="167.76611694152925"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0715" width="744" height="1392"/>
+    </resources>
 </document>
