@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "welcomeViewController.h"
+#import "AdViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +19,76 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSDictionary *infoDic = [NSBundle mainBundle].infoDictionary;
+    NSString *version = infoDic[@"CFBundleShortVersionString"];
+    NSString *readVersion = [[NSUserDefaults standardUserDefaults] objectForKey:@"readVersion"];
+    if (![version isEqualToString:readVersion]) {
+        [self welcomeWindow];
+    }
+    if ([version isEqualToString:readVersion]) {// 去掉  ！  回复正常逻辑
+        [self adWindow];
+    }
+    [self window];
+    
+    
+    
+    
+    
     return YES;
 }
+
+-(UIWindow *)window{
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        [_window makeKeyAndVisible];
+        
+        //判断默认 界面。   已经登录
+        ViewController *vc = [[ViewController alloc] init];
+        
+        _window.rootViewController = vc;
+        
+    }
+    return _window;
+}
+
+- (UIWindow *)welcomeWindow{
+    if (!_welcomeWindow) {
+        _welcomeWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _welcomeWindow.hidden = NO;
+        _welcomeWindow.rootViewController = [[welcomeViewController alloc] init];
+        _welcomeWindow.windowLevel = 3;
+    }
+    return _welcomeWindow;
+}
+
+- (UIWindow *)adWindow{
+    if (!_adWindow) {
+        _adWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _adWindow.hidden = NO;
+        _adWindow.windowLevel = 2;
+        _adWindow.rootViewController = [[AdViewController alloc] init];
+    }
+    return _adWindow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

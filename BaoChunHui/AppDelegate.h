@@ -15,8 +15,16 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
-- (void)saveContext;
+@property(nonatomic, strong) UIWindow * welcomeWindow;
 
+@property(nonatomic, strong) UIWindow * adWindow;
+
+
+
+
+- (void)saveContext;
+//11月17号改动
+@property （nonatomic) UIKit *shaochao;
 
 @end
 

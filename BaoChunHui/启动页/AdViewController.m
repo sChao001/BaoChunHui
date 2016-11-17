@@ -7,7 +7,7 @@
 //
 
 #import "AdViewController.h"
-
+#import "AppDelegate.h"
 @interface AdViewController ()
 
 
@@ -15,6 +15,7 @@
 @property(nonatomic, strong) UIImage * AdImage;
 @property(nonatomic, strong) UILabel * timeV;
 @property(nonatomic, strong) UIImageView * imgV;
+@property(nonatomic, strong) NSTimer * timer;
 
 @end
 
@@ -23,30 +24,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /*
     NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *adImage = [NSString stringWithFormat:@"%@/%@",documentPath, @"adImage"];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:adImage] ) {
         //进入主界面
-    }
+    }*/
     
     
-    [self configImageView];
+    
+    
+    self.imgV = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:self.imgV];
+    self.imgV.image = [UIImage imageNamed:@"IMG_0414"];
+    
     [self timeV];
-    self.AdImage = [[UIImage alloc] initWithContentsOfFile:adImage];
-    
     
     
     
     
 }
 
-- (void)configImageView{
-    
-    _imgV = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _imgV.image = self.AdImage;
-    
-}
 
 
 
@@ -56,27 +55,40 @@
         [self.imgV addSubview:_timeV];
         [_timeV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(50);
-            make.right.equalTo(50);
+            make.right.equalTo(-50);
             make.size.equalTo(CGSizeMake(50, 50));
         }];
     }
     
-    _timeV.alpha = .5;
+    _timeV.alpha = .8;
+    _timeV.backgroundColor = [UIColor whiteColor];
     _timeV.font = [UIFont systemFontOfSize:30];
-    _timeV.textColor = [UIColor whiteColor];
+    _timeV.textColor = [UIColor blackColor];
+    _timeV.textAlignment = NSTextAlignmentCenter;
     _timeV.layer.cornerRadius = 25;
     _timeV.clipsToBounds = YES;
     
     
     _timeV.text = @"3";
+    
     __block NSInteger time = 2;
-    [NSTimer scheduledTimerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
         _timeV.text = [NSString stringWithFormat:@"%ld",(long)time];
         if (time == 0) {
 #pragma mark - 广告页面消失，进入主界面
             //广告页面消失，进入主界面
+            
+            [UIView animateWithDuration:1 animations:^{
+                self.view.alpha = 0;
+                self.view.transform = CGAffineTransformMakeScale(1.5, 1.5);
+            } completion:^(BOOL finished) {
+                AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.adWindow.rootViewController = nil;
+            delegate.adWindow = nil;
+            }];
+            
         }
-        time -= time;
+        time -= 1;
     } repeats:YES];
     return _timeV;
 }
