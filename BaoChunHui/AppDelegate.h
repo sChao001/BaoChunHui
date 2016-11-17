@@ -16,7 +16,8 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;
-
+//11月17号改动
+@property （nonatomic) UIKit *shaochao;
 
 @end
 
