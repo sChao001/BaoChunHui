@@ -10,6 +10,15 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *oldPeopleButton;
+
+
+
+
+
+
+
+
 @end
 
 @implementation ViewController
@@ -19,6 +28,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 }
+
+- (IBAction)chooseOldPeopleModule:(UIButton *)sender {
+    
+    [[speach sharedSpeechModel] speechStartWithText:sender.titleLabel.text];
+    
+}
+
+
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
