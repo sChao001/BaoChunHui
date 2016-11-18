@@ -26,6 +26,7 @@
 		E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4233B7F1DDAA1990023D3DC /* BaoChunHui.xcdatamodeld */; };
 		E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4233B821DDAA1990023D3DC /* Assets.xcassets */; };
 		E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4233B841DDAA1990023D3DC /* LaunchScreen.storyboard */; };
+		E44CF4591DDD84AC00783CDB /* speach.m in Sources */ = {isa = PBXBuildFile; fileRef = E44CF4581DDD84AB00783CDB /* speach.m */; };
 		E45E831E1DDAE65B00CC493B /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E831D1DDAE65B00CC493B /* AdViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		E4233B821DDAA1990023D3DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4233B851DDAA1990023D3DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4233B871DDAA1990023D3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44CF4571DDD84AB00783CDB /* speach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speach.h; sourceTree = "<group>"; };
+		E44CF4581DDD84AB00783CDB /* speach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = speach.m; sourceTree = "<group>"; };
 		E45E831C1DDAE65B00CC493B /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		E45E831D1DDAE65B00CC493B /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		E45E831F1DDAEF7000CC493B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -408,6 +411,8 @@
 		E45E82F51DDAD61900CC493B /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				E44CF4571DDD84AB00783CDB /* speach.h */,
+				E44CF4581DDD84AB00783CDB /* speach.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -740,6 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40A74FF1DDB090F00A30B81 /* UIView+HUD.m in Sources */,
+				E44CF4591DDD84AC00783CDB /* speach.m in Sources */,
 				E4233B7B1DDAA1990023D3DC /* ViewController.m in Sources */,
 				E40A75061DDB295100A30B81 /* AdNetWorking.m in Sources */,
 				E41094181DDBF83300C995D3 /* welcomeViewController.m in Sources */,
