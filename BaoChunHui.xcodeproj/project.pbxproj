@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F675D3CAB0F49A2200CEB70 /* libPods-BaoChunHui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3910A8855EDA633D3934D805 /* libPods-BaoChunHui.a */; };
-		E4089ADD1DDC3951005E7ED3 /* OldPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4089ADC1DDC3951005E7ED3 /* OldPeopleViewController.m */; };
-		E4089ADF1DDC39E0005E7ED3 /* OldPeople.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4089ADE1DDC39E0005E7ED3 /* OldPeople.storyboard */; };
 		E4089AE11DDC3A50005E7ED3 /* Nurse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4089AE01DDC3A50005E7ED3 /* Nurse.storyboard */; };
 		E4089AE31DDC3A73005E7ED3 /* Family.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4089AE21DDC3A73005E7ED3 /* Family.storyboard */; };
 		E40A74EB1DDB048B00A30B81 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E40A74E81DDB048B00A30B81 /* BaseNetworking.m */; };
@@ -26,16 +24,16 @@
 		E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4233B7F1DDAA1990023D3DC /* BaoChunHui.xcdatamodeld */; };
 		E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4233B821DDAA1990023D3DC /* Assets.xcassets */; };
 		E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4233B841DDAA1990023D3DC /* LaunchScreen.storyboard */; };
+		E44CF4591DDD84AC00783CDB /* speach.m in Sources */ = {isa = PBXBuildFile; fileRef = E44CF4581DDD84AB00783CDB /* speach.m */; };
 		E45E831E1DDAE65B00CC493B /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E831D1DDAE65B00CC493B /* AdViewController.m */; };
+		E4AD899F1DE2876E00C1430B /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD899D1DE2876E00C1430B /* LiveViewController.m */; };
+		E4AD89A01DE2876E00C1430B /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4AD899E1DE2876E00C1430B /* LiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		174C263514D038E3D417B2C3 /* Pods-BaoChunHui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaoChunHui.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaoChunHui/Pods-BaoChunHui.release.xcconfig"; sourceTree = "<group>"; };
 		3910A8855EDA633D3934D805 /* libPods-BaoChunHui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaoChunHui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D152909B97108D0FE9E727 /* Pods-BaoChunHui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaoChunHui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaoChunHui/Pods-BaoChunHui.debug.xcconfig"; sourceTree = "<group>"; };
-		E4089ADB1DDC3951005E7ED3 /* OldPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldPeopleViewController.h; sourceTree = "<group>"; };
-		E4089ADC1DDC3951005E7ED3 /* OldPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldPeopleViewController.m; sourceTree = "<group>"; };
-		E4089ADE1DDC39E0005E7ED3 /* OldPeople.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OldPeople.storyboard; sourceTree = "<group>"; };
 		E4089AE01DDC3A50005E7ED3 /* Nurse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Nurse.storyboard; sourceTree = "<group>"; };
 		E4089AE21DDC3A73005E7ED3 /* Family.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Family.storyboard; sourceTree = "<group>"; };
 		E40A74E71DDB048B00A30B81 /* BaseNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
@@ -64,9 +62,14 @@
 		E4233B821DDAA1990023D3DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4233B851DDAA1990023D3DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4233B871DDAA1990023D3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44CF4571DDD84AB00783CDB /* speach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speach.h; sourceTree = "<group>"; };
+		E44CF4581DDD84AB00783CDB /* speach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = speach.m; sourceTree = "<group>"; };
 		E45E831C1DDAE65B00CC493B /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		E45E831D1DDAE65B00CC493B /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		E45E831F1DDAEF7000CC493B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E4AD899C1DE2876E00C1430B /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		E4AD899D1DE2876E00C1430B /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		E4AD899E1DE2876E00C1430B /* LiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,83 +366,29 @@
 		E45E82EF1DDAD61900CC493B /* 老人 */ = {
 			isa = PBXGroup;
 			children = (
-				E45E82F01DDAD61900CC493B /* Category */,
-				E45E82F21DDAD61900CC493B /* Model */,
-				E45E82F31DDAD61900CC493B /* NerManager */,
-				E45E82F41DDAD61900CC493B /* Resourse */,
 				E45E82F51DDAD61900CC493B /* Tool */,
-				E45E82F61DDAD61900CC493B /* Vendor */,
-				E45E82F71DDAD61900CC493B /* View */,
 				E45E82F81DDAD61900CC493B /* ViewContorller */,
-				E45E82F91DDAD61900CC493B /* ViewModel */,
-				E4089ADE1DDC39E0005E7ED3 /* OldPeople.storyboard */,
 			);
 			path = "老人";
-			sourceTree = "<group>";
-		};
-		E45E82F01DDAD61900CC493B /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		E45E82F21DDAD61900CC493B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E45E82F31DDAD61900CC493B /* NerManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NerManager;
-			sourceTree = "<group>";
-		};
-		E45E82F41DDAD61900CC493B /* Resourse */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resourse;
 			sourceTree = "<group>";
 		};
 		E45E82F51DDAD61900CC493B /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				E44CF4571DDD84AB00783CDB /* speach.h */,
+				E44CF4581DDD84AB00783CDB /* speach.m */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		E45E82F61DDAD61900CC493B /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		E45E82F71DDAD61900CC493B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E45E82F81DDAD61900CC493B /* ViewContorller */ = {
 			isa = PBXGroup;
 			children = (
-				E4089ADB1DDC3951005E7ED3 /* OldPeopleViewController.h */,
-				E4089ADC1DDC3951005E7ED3 /* OldPeopleViewController.m */,
+				E4AD899C1DE2876E00C1430B /* LiveViewController.h */,
+				E4AD899D1DE2876E00C1430B /* LiveViewController.m */,
+				E4AD899E1DE2876E00C1430B /* LiveViewController.xib */,
 			);
 			path = ViewContorller;
-			sourceTree = "<group>";
-		};
-		E45E82F91DDAD61900CC493B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E45E83051DDAD61900CC493B /* 站点 */ = {
@@ -679,8 +628,8 @@
 				E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */,
 				E4089AE31DDC3A73005E7ED3 /* Family.storyboard in Resources */,
 				E4233B7E1DDAA1990023D3DC /* Main.storyboard in Resources */,
+				E4AD89A01DE2876E00C1430B /* LiveViewController.xib in Resources */,
 				E4089AE11DDC3A50005E7ED3 /* Nurse.storyboard in Resources */,
-				E4089ADF1DDC39E0005E7ED3 /* OldPeople.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,17 +689,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40A74FF1DDB090F00A30B81 /* UIView+HUD.m in Sources */,
+				E44CF4591DDD84AC00783CDB /* speach.m in Sources */,
 				E4233B7B1DDAA1990023D3DC /* ViewController.m in Sources */,
 				E40A75061DDB295100A30B81 /* AdNetWorking.m in Sources */,
 				E41094181DDBF83300C995D3 /* welcomeViewController.m in Sources */,
 				E40A74FC1DDB090F00A30B81 /* NSObject+Parse.m in Sources */,
+				E4AD899F1DE2876E00C1430B /* LiveViewController.m in Sources */,
 				E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */,
 				E40A750A1DDB2A6F00A30B81 /* AdModel.m in Sources */,
 				E4233B781DDAA1990023D3DC /* AppDelegate.m in Sources */,
 				E45E831E1DDAE65B00CC493B /* AdViewController.m in Sources */,
 				E40A74EB1DDB048B00A30B81 /* BaseNetworking.m in Sources */,
 				E4233B751DDAA1990023D3DC /* main.m in Sources */,
-				E4089ADD1DDC3951005E7ED3 /* OldPeopleViewController.m in Sources */,
 				E40A75021DDB094B00A30B81 /* NSString+myURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

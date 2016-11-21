@@ -1,22 +1,22 @@
 //
-//  OldPeopleViewController.m
+//  LiveViewController.m
 //  BaoChunHui
 //
-//  Created by xudogn on 16/11/16.
+//  Created by xudogn on 16/11/21.
 //  Copyright © 2016年 xudogn. All rights reserved.
 //
 
-#import "OldPeopleViewController.h"
+#import "LiveViewController.h"
 
-@interface OldPeopleViewController ()
+@interface LiveViewController ()
 
 @end
 
-@implementation OldPeopleViewController
+@implementation LiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

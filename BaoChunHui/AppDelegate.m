@@ -10,7 +10,7 @@
 #import "welcomeViewController.h"
 #import "AdViewController.h"
 #import "ViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -31,12 +31,28 @@
     }
     [self window];
     
-    
+    [self speechModelConfig];  // 通过此设置，防止因为手机设置而听不到声音、
     
     
     
     return YES;
 }
+
+
+- (void)speechModelConfig{
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    
+    NSError *error;
+    if (![audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:&error]) {
+            NSLog(@"set category error : %@", error);
+        }
+    if (![audioSession setActive:YES error:&error]) {
+            NSLog(@"set active error: %@", error);
+        }
+    
+    
+}
+
 
 -(UIWindow *)window{
     if (!_window) {
