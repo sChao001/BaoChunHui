@@ -25,10 +25,11 @@
 		E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4233B821DDAA1990023D3DC /* Assets.xcassets */; };
 		E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4233B841DDAA1990023D3DC /* LaunchScreen.storyboard */; };
 		E44CF4591DDD84AC00783CDB /* speach.m in Sources */ = {isa = PBXBuildFile; fileRef = E44CF4581DDD84AB00783CDB /* speach.m */; };
+		E4501AFF1DE6C18C0015A79E /* scoreShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4501AFE1DE6C18C0015A79E /* scoreShopCell.m */; };
+		E4501B021DE6C9590015A79E /* scoreShopHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4501B011DE6C9590015A79E /* scoreShopHeaderView.m */; };
 		E4520D661DE524E80043C234 /* certifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4520D641DE524E80043C234 /* certifyViewController.m */; };
 		E4520D671DE524E80043C234 /* certifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4520D651DE524E80043C234 /* certifyViewController.xib */; };
 		E4520D6B1DE5275E0043C234 /* scoreShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4520D691DE5275E0043C234 /* scoreShopViewController.m */; };
-		E4520D6C1DE5275E0043C234 /* scoreShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4520D6A1DE5275E0043C234 /* scoreShopViewController.xib */; };
 		E4520D751DE583610043C234 /* CardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4520D731DE583610043C234 /* CardTableViewController.m */; };
 		E4520D761DE583610043C234 /* CardTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4520D741DE583610043C234 /* CardTableViewController.xib */; };
 		E4520D7A1DE586DC0043C234 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4520D781DE586DC0043C234 /* aboutViewController.m */; };
@@ -123,12 +124,15 @@
 		E4233B871DDAA1990023D3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44CF4571DDD84AB00783CDB /* speach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speach.h; sourceTree = "<group>"; };
 		E44CF4581DDD84AB00783CDB /* speach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = speach.m; sourceTree = "<group>"; };
+		E4501AFD1DE6C18C0015A79E /* scoreShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scoreShopCell.h; sourceTree = "<group>"; };
+		E4501AFE1DE6C18C0015A79E /* scoreShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scoreShopCell.m; sourceTree = "<group>"; };
+		E4501B001DE6C9590015A79E /* scoreShopHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scoreShopHeaderView.h; sourceTree = "<group>"; };
+		E4501B011DE6C9590015A79E /* scoreShopHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scoreShopHeaderView.m; sourceTree = "<group>"; };
 		E4520D631DE524E80043C234 /* certifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = certifyViewController.h; sourceTree = "<group>"; };
 		E4520D641DE524E80043C234 /* certifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = certifyViewController.m; sourceTree = "<group>"; };
 		E4520D651DE524E80043C234 /* certifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = certifyViewController.xib; sourceTree = "<group>"; };
 		E4520D681DE5275E0043C234 /* scoreShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scoreShopViewController.h; sourceTree = "<group>"; };
 		E4520D691DE5275E0043C234 /* scoreShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scoreShopViewController.m; sourceTree = "<group>"; };
-		E4520D6A1DE5275E0043C234 /* scoreShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scoreShopViewController.xib; sourceTree = "<group>"; };
 		E4520D721DE583610043C234 /* CardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTableViewController.h; sourceTree = "<group>"; };
 		E4520D731DE583610043C234 /* CardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTableViewController.m; sourceTree = "<group>"; };
 		E4520D741DE583610043C234 /* CardTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewController.xib; sourceTree = "<group>"; };
@@ -401,6 +405,31 @@
 				E4233B741DDAA1990023D3DC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4501AFA1DE6C1410015A79E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E4501AFD1DE6C18C0015A79E /* scoreShopCell.h */,
+				E4501AFE1DE6C18C0015A79E /* scoreShopCell.m */,
+				E4501B001DE6C9590015A79E /* scoreShopHeaderView.h */,
+				E4501B011DE6C9590015A79E /* scoreShopHeaderView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E4501AFB1DE6C1410015A79E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		E4501AFC1DE6C1500015A79E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		E4520D7C1DE592540043C234 /* Model */ = {
@@ -833,6 +862,9 @@
 		E4AE1BC61DE3E217002795BD /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				E4501AFA1DE6C1410015A79E /* view */,
+				E4501AFB1DE6C1410015A79E /* viewModel */,
+				E4501AFC1DE6C1500015A79E /* model */,
 				E4AE1BDE1DE413E9002795BD /* MineTableViewController.h */,
 				E4AE1BDF1DE413E9002795BD /* MineTableViewController.m */,
 				E4AE1BDC1DE3ED5B002795BD /* MineStoryboard.storyboard */,
@@ -841,7 +873,6 @@
 				E4520D651DE524E80043C234 /* certifyViewController.xib */,
 				E4520D681DE5275E0043C234 /* scoreShopViewController.h */,
 				E4520D691DE5275E0043C234 /* scoreShopViewController.m */,
-				E4520D6A1DE5275E0043C234 /* scoreShopViewController.xib */,
 				E4520D721DE583610043C234 /* CardTableViewController.h */,
 				E4520D731DE583610043C234 /* CardTableViewController.m */,
 				E4520D741DE583610043C234 /* CardTableViewController.xib */,
@@ -975,7 +1006,6 @@
 				E4BF09331DE2EDA50075A746 /* RegistViewController.xib in Resources */,
 				E4AE1BDD1DE3ED5B002795BD /* MineStoryboard.storyboard in Resources */,
 				E4AE1C361DE4579C002795BD /* CareViewController.xib in Resources */,
-				E4520D6C1DE5275E0043C234 /* scoreShopViewController.xib in Resources */,
 				E4520DB81DE5B9520043C234 /* read_me.txt in Resources */,
 				E4AE1BCC1DE3E259002795BD /* LiveViewController.xib in Resources */,
 				E4520DAB1DE5B9520043C234 /* ShareSDKConfigFile.bundle in Resources */,
@@ -1042,6 +1072,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4AE1BE01DE413E9002795BD /* MineTableViewController.m in Sources */,
+				E4501AFF1DE6C18C0015A79E /* scoreShopCell.m in Sources */,
 				E4520D751DE583610043C234 /* CardTableViewController.m in Sources */,
 				E4AE1C351DE4579C002795BD /* CareViewController.m in Sources */,
 				E40A74FF1DDB090F00A30B81 /* UIView+HUD.m in Sources */,
@@ -1058,6 +1089,7 @@
 				E4520D7F1DE5927C0043C234 /* userModel.m in Sources */,
 				E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */,
 				E40A750A1DDB2A6F00A30B81 /* AdModel.m in Sources */,
+				E4501B021DE6C9590015A79E /* scoreShopHeaderView.m in Sources */,
 				E4AE1BE61DE43BC3002795BD /* BCHnaviViewController.m in Sources */,
 				E4AE1C2C1DE455E2002795BD /* FamilyTabBarViewController.m in Sources */,
 				E4233B781DDAA1990023D3DC /* AppDelegate.m in Sources */,

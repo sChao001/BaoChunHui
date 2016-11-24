@@ -19,6 +19,22 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
