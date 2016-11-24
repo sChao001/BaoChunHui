@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface scoreShopViewController : UIViewController
+@interface scoreShopViewController : UICollectionViewController
 
 @end
